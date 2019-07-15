@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/drop.css">
+  <link rel="stylesheet" href="./css/artwork.css">
+  <link rel="stylesheet" href="./css/controller.css">
+  <script type="text/javascript" src="./js/various.js"></script>
+  <script type="text/javascript" src="./js/drop.js"></script>
+  <script type="text/javascript" src="./js/player.js"></script>
+  <script type="text/javascript" src="./js/artwork.js"></script>
+  <title>Visual Music</title>
+</head>
+<body>
+  <span id="prepare_font" style="font-family: 'Rounded Mplus 1c';">Prepare font.</span>
+  <audio id="audio_player"></audio>
+  <div id="fixed_area" class="center">
+    <div id="blur_area" class="center">
+      <img id="back_artwork" class="center">
+      <div id="artwork_filter" class="center"></div>
+      <div id="visualizer_area" class="center">
+        <canvas id="visualizer" class="center"></canvas>
+      </div>
+      <div id="artwork_area" class="center">
+        <img id="main_artwork" class="center">
+      </div>
+      <div id="controller_area" class="center">
+        <div id="rotate_area" class="center">
+          <div id="rotate_front" class="center">
+            <div id="name_and_time" class="center">
+              <canvas id="music_name" class="center"></canvas>
+              <canvas id="time_display" class="center"></canvas>
+            </div>
+            <div id="previous" class="center">
+              <img id="previous_icon" class="center" src="./img/controller/front/previous.svg">
+            </div>
+            <div id="following" class="center">
+              <img id="following_icon" class="center" src="./img/controller/front/following.svg">
+            </div>
+            <div id="progress_seek_area" class="center">
+              <canvas id="progress_seek_bar" class="center"></canvas>
+              <div id="progress_handle" class="position"></div>
+            </div>
+          </div>
+          <div id="rotate_bottom" class="center">
+            <div id="volume" class="center">
+              <img id="volume_icon" class="center" src="./img/controller/bottom/volume.svg">
+              <div id="volume_seek_area" class="center">
+                <canvas id="volume_seek_bar" class="center"></canvas>
+                <div id="volume_handle" class="position"></div>
+              </div>
+            </div>
+            <div id="loop" class="center">
+              <img id="loop_false_icon" class="center" src="./img/controller/bottom/loop_false.svg">
+              <img id="loop_true_icon" class="center" src="./img/controller/bottom/loop_true.svg">
+            </div>
+            <div id="remove" class="center">
+              <img id="remove_icon" class="center" src="./img/controller/bottom/remove.svg">
+            </div>
+            <div id="round_dot" class="center">
+                <img id="round_dot_false" class="center" src="./img/controller/bottom/visualizer/round_dot_false.svg">
+                <img id="round_dot_true" class="center" src="./img/controller/bottom/visualizer/round_dot_true.svg">
+            </div>
+            <div id="round_rod" class="center">
+                <img id="round_rod_false" class="center" src="./img/controller/bottom/visualizer/round_rod_false.svg">
+                <img id="round_rod_true" class="center" src="./img/controller/bottom/visualizer/round_rod_true.svg">
+            </div>
+            <div id="line_dot" class="center">
+                <img id="line_dot_false" class="center" src="./img/controller/bottom/visualizer/line_dot_false.svg">
+                <img id="line_dot_true" class="center" src="./img/controller/bottom/visualizer/line_dot_true.svg">
+            </div>
+            <div id="line_rod" class="center">
+                <img id="line_rod_false" class="center" src="./img/controller/bottom/visualizer/line_rod_false.svg">
+                <img id="line_rod_true" class="center" src="./img/controller/bottom/visualizer/line_rod_true.svg">
+            </div>
+          </div>
+        </div>
+        <div id="play_pause" class="center">
+          <img id="play_icon" class="center" src="./img/controller/play.svg">
+          <img id="pause_icon" class="center" src="./img/controller/pause.svg">
+        </div>
+        <div id="other_menu" class="center">
+          <img id="other_icon" class="center" src="./img/controller/other.svg">
+        </div>
+      </div>
+    </div>
+    <div id="message_area" class="center">
+      <canvas id="message_box" class="center"></canvas>
+    </div>
+    <div id="drop_filter" class="center"></div>
+  </div>
+  <label>
+    <input id="file_input" type="file" accept="audio/*" multiple="multiple">
+    <div id="drop_area" class="center">
+      <img id="drop_icon" class="center" src="./img/drop/drop_icon.svg">
+      <img id="drop_true" class="center" src="./img/drop/drop_true.svg">
+    </div>
+  </label>
+  <div id="drop_surface" class="center"></div>
+</body>
+</html>
+

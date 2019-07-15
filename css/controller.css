@@ -1,0 +1,247 @@
+div#controller_area {
+  width: 85vmin;
+  height: 15vmin;
+  top: 85vmin;
+}
+
+div#rotate_area {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+div#rotate_area.on {
+  transform: rotateX(90deg);
+}
+
+div#rotate_front {
+  width: 75vmin;
+  height: 15vmin;
+  transform: translateZ(7.5vmin);
+}
+
+div#name_and_time {
+  width: 100%;
+  height: 100%;
+}
+
+canvas#music_name {
+  width: 70vmin;
+  height: 4vmin;
+  bottom: 9vmin;
+}
+
+canvas#time_display {
+  width: 20vmin;
+  height: 4vmin;
+  top: 9vmin;
+}
+
+div#previous {
+  width: 4vmin;
+  height: 4vmin;
+  top: 8vmin;
+  right: 24vmin;
+}
+
+img#previous_icon {
+  width: 100%;
+  height: 100%;
+}
+
+div#following {
+  width: 4vmin;
+  height: 4vmin;
+  top: 8vmin;
+  left: 24vmin;
+}
+
+img#following_icon {
+  width: 100%;
+  height: 100%;
+}
+
+div#progress_seek_area {
+  width: 75vmin;
+  height: 4vmin;
+}
+
+canvas#progress_seek_bar {
+  width: 70vmin;
+  height: 0.3vmin;
+  background-color: rgb(255, 255, 255);
+}
+
+div#progress_handle {
+  width: 1.5vmin;
+  height: 1.5vmin;
+  top: 0px;
+  left: 1.75vmin;
+  bottom: 0px;
+  background-color: rgb(66, 133, 244);
+  border-radius: 0.75vmin;
+}
+
+div#rotate_bottom {
+  width: 75vmin;
+  height: 15vmin;
+  transform: translateY(7.5vmin) rotateX(-90deg);
+}
+
+div#volume {
+  width: 24vmin;
+  height: 4vmin;
+  transform: translateX(-22vmin);
+}
+
+img#volume_icon {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(-10vmin);
+}
+
+div#volume_seek_area {
+  width: 20vmin;
+  height: 4vmin;
+  transform: translateX(2vmin);
+}
+
+canvas#volume_seek_bar {
+  width: 14vmin;
+  height: 0.3vmin;
+  background-color: rgb(255, 255, 255);
+}
+
+div#volume_handle {
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background-color: rgb(66, 134, 244);
+  border-radius: 0.75vmin;
+  top: 0px;
+  left: 2.25vmin;
+  bottom: 0px;
+}
+div#loop {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(-8vmin);
+}
+
+img#loop_false_icon {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+img#loop_true_icon {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#remove {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+img#remove_icon {
+  width: 100%;
+  height: 100%;
+}
+
+div#round_dot {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(8vmin);
+}
+
+img#round_dot_false {
+  width: 100%;
+  height: 100%;
+}
+
+img#round_dot_true {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#round_rod {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(16vmin);
+}
+
+img#round_rod_false {
+  width: 100%;
+  height: 100%;
+}
+
+img#round_rod_true {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#line_dot {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(24vmin);
+}
+
+img#line_dot_false {
+  width: 100%;
+  height: 100%;
+}
+
+img#line_dot_true {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#line_rod {
+  width: 4vmin;
+  height: 4vmin;
+  transform: translateX(32vmin)
+}
+
+img#line_rod_false {
+  width: 100%;
+  height: 100%;
+}
+
+img#line_rod_true {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#play_pause {
+  width: 5vmin;
+  height: 5vmin;
+  right: 80vmin;
+}
+
+img#play_icon {
+  width: 100%;
+  height: 100%;
+}
+
+img#pause_icon {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+div#other_menu {
+  width: 5vmin;
+  height: 5vmin;
+  left: 80vmin;
+}
+
+img#other_icon {
+  width: 100%;
+  height: 100%;
+}
