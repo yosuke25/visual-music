@@ -25,6 +25,7 @@ body {
   height: 100vh;
   margin: 0px;
   overflow: hidden;
+  position: fixed;
 }
 
 span#prepare_font {

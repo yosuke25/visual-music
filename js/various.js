@@ -59,7 +59,7 @@
       let file_list = [];
       if (files.length <= 0) return file_list;
       for (let i = 0; i < files.length; i++) {
-        if (files[i].type.slice(0, 6) === 'audio/') file_list.push(files[i]);
+        if ((files[i].type.slice(0, 6) === 'audio/') || (files[i].type === '')) file_list.push(files[i]);
       };
       file_list.sort((a, b) => {
         if (a.name < b.name) return -1;

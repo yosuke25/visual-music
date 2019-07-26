@@ -4,7 +4,7 @@
 
   window.get.artwork = async (file) => {
 
-    if (!['audio/mp3', 'audio/x-m4a', 'audio/mp4', 'audio/mpeg'].includes(file.type)) return null;
+    if (!['audio/mp3', 'audio/x-m4a', 'audio/mp4', 'audio/mpeg', ''].includes(file.type)) return null;
     return artwork_analyzer(await reader(file));
 
     function reader (file) {
